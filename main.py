@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+import daten
 
 app = Flask("Hello World")
 
@@ -13,19 +14,18 @@ def hello():
 def test():
     return "erfolgreich"
 
-@app.route("/luca", methods=['GET', 'POST'])
-def luca():
+@app.route("/pflanzenformular", methods=['GET', 'POST'])
+def pflanzenformular():
     if request.method == 'POST':
         ziel_pflanze = request.form['pflanze']
-        rueckgabe_string1 = ziel_pflanze
 
         ziel_giessen = request.form['giessen']
-        rueckgabe_string2 = ziel_giessen
 
         ziel_wasser = request.form['wasser']
-        rueckgabe_string3 = ziel_wasser
 
-        return render_template("index.html", pflanzenausgabe=rueckgabe_string1 + ", welche " + rueckgabe_string2 + " mal gegossen werden muss, mit " + rueckgabe_string3 + " Liter Wasser ")
+        daten.aktivitaet_speichern(ziel_pflanze, ziel_wasser, ziel_giessen)
+
+        return render_template("index.html", pflanzenausgabe=ziel_pflanze + ", welche " + ziel_giessen + " mal gegossen werden muss, mit " + ziel_wasser + " Liter Wasser ")
 
     return render_template("index.html")
 
