@@ -1,28 +1,32 @@
 {% include "header.html" %}
+{% include "navbar.html" %}
 
 <body>
 
-    <h1>Hello {{ name }}</h1>
+    <div class="container">
 
-    <form action="{{url_for('pflanzenformular')}}" method="post">
-      <div class="mb-3">
-        <label class="form-label">Welche Pflanze wird aufgenommen?</label>
-        <input type="text" class="form-control" name="pflanze" id="pflanze" placeholder="z.B. Orchidee">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Wie viel mal pro Woche soll sie gegossen werden?</label>
-        <input type="text" class="form-control" name="giessen" id="giessen" placeholder="z.B. 1">
-      </div>
-      <div class="mb-3">
-        <label class="form-label">Wie viel Liter Dl Wasser braucht sie?</label>
-        <input type="text" class="form-control" name="wasser" id="wasser" placeholder="z.B. 1.5">
-      </div>
-      <button type="submit" class="btn btn-primary">Zu Familie hinzufügen</button>
-    </form>
+        <h1>Füge deine Pflanze in deinen Garten!</h1>
 
+        <form action="{{url_for('pflanzenformular')}}" method="post">
+          <div class="mb-3">
+            <label class="form-label">Welche Pflanze wird aufgenommen?</label>
+            <input type="text" class="form-control" name="pflanze" id="pflanze" placeholder="z.B. Orchidee">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Wie viel mal pro Woche soll sie gegossen werden?</label>
+            <input type="text" class="form-control" name="giessen" id="giessen" placeholder="z.B. 1">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Wie viel Liter Dl Wasser braucht sie?</label>
+            <input type="text" class="form-control" name="wasser" id="wasser" placeholder="z.B. 1.5">
+          </div>
+          <button type="submit" class="btn btn-primary">Zu Familie hinzufügen</button>
+        </form>
 
-    <a href="{{ url_for('test')}}">Test</a>
+    </div>
 
-    <h1>Du hast {{ pflanzenausgabe }} in deinen Garten hinzugefügt!</h1>
+    <h3>{{ pflanzenausgabe }}</h3>
 </body>
+
+{% include "footer.html" %}
 </html>

@@ -1,0 +1,13 @@
+{% include "header.html" %}
+{% include "navbar.html" %}
+
+<body>
+
+    <h1>Willkommen {{ name }}</h1>
+    <h2>Du befindest dich an der Tür zu deinem Gewächshaus.</h2>
+    <a class="button" href="{{ url_for('pflanzenformular')}}">
+        Füge eine Pflanze in deinen Garten
+    </a>
+
+</body>
+</html>
