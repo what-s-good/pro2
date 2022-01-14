@@ -28,8 +28,8 @@ def aktivitaet_speichern(pflanze, giessen, wasser):
     return zeitpunkt, pflanze, giessen, wasser
 
 
-def aktivitaeten_laden():
-    datei_name = "aktivitaeten_2.json"
+def pflanzen_laden():
+    datei_name = "pflanzendaten.json"
 
     try:
         with open(datei_name) as open_file:

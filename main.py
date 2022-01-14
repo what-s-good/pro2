@@ -2,12 +2,12 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import daten
-import json
+from daten import pflanzen_laden
 
 app = Flask("Hello World")
 
 
-@app.route("/hello")
+@app.route("/")
 def hello():
     return render_template('start.html', name="Luca")
 
@@ -28,10 +28,10 @@ def pflanzenformular():
     return render_template("index.html")
 
 
-@app.route("/garten")
+@app.route("/garten", methods=['GET'])
 def garten():
-    return render_template('garten.html')
-
+    stockladen = pflanzen_laden()
+    return render_template('garten.html', stockladen = stockladen)
 
 @app.route("/aufgaben")
 def aufgaben():

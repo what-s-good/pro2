@@ -1,7 +1,11 @@
-{% include "header.html" %}
-{% include "navbar.html" %}
 
-<body>
-  <h1>garten</h1>
-</body>
-</html>
+{%extends "header.html" %}
+{%block content%}
+
+  {% for item in stockladen.items() %}
+    <br><br>
+    {{ item }}
+
+  {% endfor %}
+
+{% endblock %}

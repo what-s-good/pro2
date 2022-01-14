@@ -1,7 +1,6 @@
-{% include "header.html" %}
-{% include "navbar.html" %}
 
-<body>
+{%extends "header.html" %}
+{%block content%}
 
     <h1>Willkommen {{ name }}</h1>
     <h2>Du befindest dich an der Tür zu deinem Gewächshaus.</h2>
@@ -9,5 +8,5 @@
         Füge eine Pflanze in deinen Garten
     </a>
 
-</body>
-</html>
+{% endblock %}
+
