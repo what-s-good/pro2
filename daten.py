@@ -1,19 +1,21 @@
-from datetime import datetime
 import json
+import datetime
 
 
-def speichern(datei, key, pflanze, giessen, wasser):
+def speichern(datei, key, pflanze, giessen, wasser, sonstig):
     try:
         with open(datei) as open_file:
             datei_inhalt = json.load(open_file)
     except FileNotFoundError:
-        datei_inhalt = {}
+        datei_inhalt = []
 
-    datei_inhalt[str(key)] = {
+    datei_inhalt.append ({
         "Pflanze": pflanze,
+        "Datum": str(key),
         "Giessen": giessen,
-        "Wasser": wasser
-    }
+        "Wasser": wasser,
+        "Sonstiges:": sonstig
+    })
 
     # print(datei_inhalt)
 
@@ -21,11 +23,11 @@ def speichern(datei, key, pflanze, giessen, wasser):
         json.dump(datei_inhalt, open_file, indent=4)
 
 
-def aktivitaet_speichern(pflanze, giessen, wasser):
+def aktivitaet_speichern(pflanze, giessen, wasser, sonstig):
     datei_name = "pflanzendaten.json"
-    zeitpunkt = datetime.now()
-    speichern(datei_name, zeitpunkt, pflanze, giessen, wasser)
-    return zeitpunkt, pflanze, giessen, wasser
+    zeitpunkt = str(datetime.date.today())
+    speichern(datei_name, zeitpunkt, pflanze, giessen, wasser, sonstig)
+    return zeitpunkt, pflanze, giessen, wasser, sonstig
 
 
 def pflanzen_laden():

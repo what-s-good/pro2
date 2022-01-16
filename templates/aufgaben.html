@@ -1,7 +1,11 @@
 
 {%extends "header.html" %}
 {%block content%}
+  <div>
+    {% for datum in stockaufgaben %}
+    {{ datum }}
+    {% endfor %}
+  </div>
 
-  <h1>aufgaben</h1>
 
 {% endblock %}

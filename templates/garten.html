@@ -1,11 +1,22 @@
 
 {%extends "header.html" %}
 {%block content%}
-
-  {% for item in stockladen.items() %}
+<div class="container">
+  <br>
+  <h1>Lucas Garten</h1>
+  <br>
+</div>
+  {% for daten in stockladen %}
     <br><br>
-    {{ item }}
-
+    <div class="container">
+      <h3>{{ daten["Pflanze"] }}</h3> <br><br>
+      <h5>Sie muss {{ daten["Giessen"] }} Mal in der Woche gegossen werden.</h5> <br>
+      <h5>Wasser: {{ daten["Wasser"] }} dl.</h5> <br>
+      <p>Eintrag erfolgte am: </p>
+      {{ daten["Datum"] }}
+      <br>
+    </div>
   {% endfor %}
 
 {% endblock %}
+

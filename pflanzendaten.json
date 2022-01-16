@@ -1,102 +1,16 @@
-{
-    "2021-12-10 17:11:13.021391": {
-        "Pflanze": "Orchidee",
-        "Giessen": "3",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:09:44.313019": {
-        "Pflanze": "Orchidee",
+[
+    {
+        "Pflanze": "Palme",
+        "Datum": "2022-01-16",
         "Giessen": "1",
-        "Wasser": "1"
+        "Wasser": "1",
+        "Sonstiges:": "Palmend\u00fcnger"
     },
-    "2021-12-29 11:10:42.584727": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:10:54.788764": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:16:55.519231": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:17:56.416931": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:19:39.002605": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:24:54.996669": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:25:41.786487": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:25:47.631988": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 11:30:09.319441": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 12:07:50.240087": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 12:11:22.449666": {
-        "Pflanze": "",
-        "Giessen": "",
-        "Wasser": ""
-    },
-    "2021-12-29 12:12:57.198277": {
-        "Pflanze": "",
-        "Giessen": "",
-        "Wasser": ""
-    },
-    "2021-12-29 12:37:00.363010": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 12:45:38.904461": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 12:46:46.150318": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 12:50:59.913480": {
-        "Pflanze": "Orchidee",
-        "Giessen": "1",
-        "Wasser": "1"
-    },
-    "2021-12-29 15:02:41.197204": {
-        "Pflanze": "",
-        "Giessen": "",
-        "Wasser": ""
-    },
-    "2022-01-13 13:49:52.258119": {
-        "Pflanze": "",
-        "Giessen": "",
-        "Wasser": ""
+    {
+        "Pflanze": "Baum",
+        "Datum": "2022-01-16",
+        "Giessen": "4",
+        "Wasser": "5",
+        "Sonstiges:": "Kaputte Bl\u00e4tter"
     }
-}
+]
