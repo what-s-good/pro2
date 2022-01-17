@@ -12,5 +12,19 @@
         "Giessen": "4",
         "Wasser": "5",
         "Sonstiges:": "Kaputte Bl\u00e4tter"
+    },
+    {
+        "Pflanze": "Orchidee",
+        "Datum": "2022-01-14",
+        "Giessen": "3",
+        "Wasser": "2",
+        "Sonstiges:": "Orchideend\u00fcnger"
+    },
+    {
+        "Pflanze": "Blume",
+        "Datum": "2022-01-16",
+        "Giessen": "1",
+        "Wasser": "5",
+        "Sonstiges:": "Kaputte Bl\u00e4tter"
     }
 ]

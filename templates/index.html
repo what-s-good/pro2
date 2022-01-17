@@ -3,16 +3,17 @@
 {%block content%}
 
     <div class="container">
+        <br><h1>Füge deine Pflanze in deinen Garten!</h1><br>
+    </div>
 
-        <h1>Füge deine Pflanze in deinen Garten!</h1>
-
+        <div class="container">
         <form action="{{url_for('pflanzenformular')}}" method="post">
           <div class="mb-3">
             <label class="form-label">Welche Pflanze wird aufgenommen?</label>
             <input type="text" class="form-control" name="pflanze" id="pflanze" placeholder="z.B. Orchidee">
           </div>
           <div class="mb-3">
-            <label class="form-label">Wie viel mal pro Woche soll sie gegossen werden?</label>
+            <label class="form-label">Mit wie vielen Tagen Abstand soll sie gegossen werden?</label>
             <input type="text" class="form-control" name="giessen" id="giessen" placeholder="z.B. 1">
           </div>
           <div class="mb-3">
@@ -25,8 +26,7 @@
           </div>
           <button type="submit" class="btn btn-primary">Zu Familie hinzufügen</button>
         </form>
-
-    </div>
+        </div>
 
     <h3>{{ pflanzenausgabe }}</h3>
 

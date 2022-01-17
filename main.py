@@ -27,7 +27,7 @@ def pflanzenformular():
 
         daten.aktivitaet_speichern(ziel_pflanze, ziel_wasser, ziel_giessen, ziel_sonstig)
 
-        return render_template("index.html", pflanzenausgabe="Du hast " + ziel_pflanze + ", welche " + ziel_giessen + " mal mit " + ziel_wasser + " Deziliter Wasser gegossen werden muss.")
+        return render_template("index.html", pflanzenausgabe="Du hast " + ziel_pflanze + ", welche " + ziel_giessen + " mal mit " + ziel_wasser + " Deziliter Wasser gegossen werden muss.") #noch verbessern
 
     return render_template("index.html")
 
@@ -47,7 +47,7 @@ def aufgaben():
         datumberechnet = datum_heute - datum1
         print(datumberechnet.days)
         if datumberechnet.days != 0: #die Pflanzen die heute eingegeben wurden werden nicht angezeigt
-            if datumberechnet.days % int(datum["Wasser"]) == 0:
+            if datumberechnet.days % int(datum["Giessen"]) == 0:
                 stockaufgaben.append(datum["Pflanze"])
     return render_template('aufgaben.html', stockaufgaben = stockaufgaben)
 
