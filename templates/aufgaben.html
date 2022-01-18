@@ -4,11 +4,29 @@
   <div class="container">
     <br><h2>Diese Pflanzen brauchen heute deine Aufmerksamkeit:</h2><br><br><br>
   </div>
-  <div class="container">
-    {% for pflanze in stockaufgaben %}
-    <h4>Die {{ pflanze }}!</h4><br>
-    <p>Sie braucht dl Wasser. </p><br><br>
-    {% endfor %}
+
+  <div class="m-5 p-5">
+    <form method="POST">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Pflanze</th>
+        <th scope="col">Wassermenge</th>
+        <th scope="col">Sonstiges zu beachten</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for aufgabe in aufgabe_inhalt %}
+      <tr>
+        <td>{{ aufgabe["Pflanze"] }}</td>
+        <td>{{ aufgabe["Wasser"] }} dl</td>
+        <td>{{ aufgabe["Sonstiges"] }}</td>
+        <td><input type="submit" class="btn btn-success" name="{{ aufgabe['Pflanze'] }}" value="Erledigt"></td> <!-- Name ist ja eine ID = Wenn es eine Orchidee ist, heisst der Button Orchidee. -->
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+      </form>
   </div>
 
 
