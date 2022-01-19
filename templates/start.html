@@ -4,22 +4,29 @@
 <div class="container">
     <br>
     <h1>Willkommen {{ name }}</h1>
-    <h2>Du befindest dich an der Tür zu deinem Gewächshaus.</h2>
+    <h2>Du befindest dich an der Tür zu deinem Gewächshaus.</h2><br><br>
+
 </div>
 <div class="container">
+    <h5>
     <a class="button" href="{{ url_for('pflanzenformular')}}">
         Füge eine Pflanze in deinen Garten
     </a>
+    </h5><br>
 </div>
 <div class="container">
+    <h5>
     <a class="button" href="{{ url_for('garten')}}">
         Schau dir deinen Garten an!
     </a>
+    </h5><br>
 </div>
 <div class="container">
+    <h5>
     <a class="button" href="{{ url_for('aufgaben')}}">
-        Welche Pflanzen brauch heute deine Aufmerksamkeit?
+        Welche Pflanzen brauchen heute deine Aufmerksamkeit?
     </a>
+    </h5><br>
 </div>
 {% endblock %}
 

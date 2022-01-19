@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import request
+from flask import redirect, url_for
 import json
 import daten
 from daten import pflanzen_laden
@@ -11,7 +12,7 @@ from datetime import date
 
 app = Flask("Hello World")
 
-#Quelle zum allgemeinen Verständnis (die ganze Serie): https://www.youtube.com/watch?v=GgS8-mn9zoM&list=PLNmsVeXQZj7otfP2zTa8AIiNIWVg0BRqs&index=12
+#Quelle zum allgemeinen Verständnis (die ganze Serie): https://www.youtube.com/watch?v=GgS8-mn9zoM&list=PLNmsVeXQZj7otfP2zTa8AIiNIWVg0BRqs&index=12 & https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3-de
 
 @app.route("/")
 def hello():
@@ -22,17 +23,11 @@ def hello():
 def pflanzenformular():
     if request.method == 'POST':
         ziel_pflanze = request.form['pflanze']
-
         ziel_giessen = request.form['giessen']
-
         ziel_wasser = request.form['wasser']
-
         ziel_sonstig = request.form['sonstig']
-
         daten.aktivitaet_speichern(ziel_pflanze, ziel_wasser, ziel_giessen, ziel_sonstig)
-
-        return render_template("index.html", pflanzenausgabe="Du hast " + ziel_pflanze + ", welche " + ziel_giessen + " mal mit " + ziel_wasser + " Deziliter Wasser gegossen werden muss.") #noch verbessern
-
+        return redirect(url_for("garten"))
     return render_template("index.html")
 
 
@@ -40,6 +35,7 @@ def pflanzenformular():
 def garten():
     stockladen = pflanzen_laden()
     return render_template('garten.html', stockladen = stockladen)
+
 
 @app.route("/aufgaben", methods=['GET', 'POST'])
 def aufgaben():
@@ -49,8 +45,8 @@ def aufgaben():
 
     for pflanze in pflanzendaten:
         if request.method == "POST":
-            if request.form.get(pflanze["Pflanze"]) == "Erledigt":
-                pflanze["Datum"] = str(dt.date.today())
+            if request.form.get(pflanze["Pflanze"]) == "Erledigt": #hier prüft es, ob der Button den gleichen "name" hat wie die Pflanze
+                pflanze["Datum"] = str(dt.date.today()) #hier resetet es das datum im pflanzendaten.json auf den heutigen tag
 
     with open("pflanzendaten.json", "w") as open_file:
         json.dump(pflanzendaten, open_file, indent=4)
