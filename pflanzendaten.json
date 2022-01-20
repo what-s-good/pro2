@@ -1,119 +1,119 @@
 [
     {
         "Pflanze": "Palme",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": "Palmend\u00fcnger"
     },
     {
         "Pflanze": "Baum",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "5",
         "Sonstiges": "Kaputte Bl\u00e4tter"
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-18",
-        "Giessen": "3",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "2",
         "Sonstiges": "Orchideend\u00fcnger"
     },
     {
         "Pflanze": "Testpflanze",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "11",
         "Sonstiges": "das ist nur ein Test"
     },
     {
         "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
+        "Wasser": "4",
+        "Sonstiges": "Tulpend\u00fcnger"
+    },
+    {
+        "Pflanze": "Tulpe",
+        "Datum": "2022-01-20",
         "Giessen": "2",
         "Wasser": "4",
         "Sonstiges": "Tulpend\u00fcnger"
     },
     {
         "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "2",
         "Wasser": "4",
         "Sonstiges": "Tulpend\u00fcnger"
     },
     {
         "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
+        "Wasser": "4",
+        "Sonstiges": "Tulpend\u00fcnger"
+    },
+    {
+        "Pflanze": "Tulpe",
+        "Datum": "2022-01-20",
         "Giessen": "2",
         "Wasser": "4",
         "Sonstiges": "Tulpend\u00fcnger"
     },
     {
         "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
-        "Giessen": "2",
-        "Wasser": "4",
-        "Sonstiges": "Tulpend\u00fcnger"
-    },
-    {
-        "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
-        "Giessen": "2",
-        "Wasser": "4",
-        "Sonstiges": "Tulpend\u00fcnger"
-    },
-    {
-        "Pflanze": "Tulpe",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "2",
         "Wasser": "4",
         "Sonstiges": "Tulpend\u00fcnger"
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-19",
-        "Giessen": "0.5",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": "Orchideend\u00fcnger"
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-19",
-        "Giessen": "0.5",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": "Orchideend\u00fcnger"
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-19",
-        "Giessen": "0.5",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": "Orchideend\u00fcnger"
     },
     {
         "Pflanze": "Tomate",
-        "Datum": "2022-01-19",
-        "Giessen": "4",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": ""
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-19",
-        "Giessen": "4",
+        "Datum": "2022-01-20",
+        "Giessen": "1",
         "Wasser": "2",
         "Sonstiges": "Orchideend\u00fcnger"
     },
     {
         "Pflanze": "Strauch",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "2",
         "Sonstiges": ""
     },
     {
         "Pflanze": "Strauch",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "2",
         "Sonstiges": ""
@@ -148,7 +148,7 @@
     },
     {
         "Pflanze": "Orchidee",
-        "Datum": "2022-01-19",
+        "Datum": "2022-01-20",
         "Giessen": "1",
         "Wasser": "1",
         "Sonstiges": "Orchideend\u00fcnger"

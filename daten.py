@@ -9,7 +9,7 @@ def speichern(datei, key, pflanze, giessen, wasser, sonstig):
     except FileNotFoundError:
         datei_inhalt = []
 
-    datei_inhalt.append ({
+    datei_inhalt.append ({ #form, wie die Daten gespeichert werden soll
         "Pflanze": pflanze,
         "Datum": str(key),
         "Giessen": giessen,
