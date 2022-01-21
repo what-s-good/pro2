@@ -61,8 +61,8 @@ def aufgaben():
         datum1 = datetime.strptime(datum["Datum"], format) #format formatiert dass Datum
         datum_heute = datetime.strptime(str(date.today()), format)
         datumberechnet = datum_heute - datum1
-        print(datumberechnet) #0:00:00
-        print(datumberechnet.days) #0
+        #print(datumberechnet) #0:00:00
+        #print(datumberechnet.days) #0
         if datumberechnet.days != 0: #die Pflanzen die heute eingegeben wurden werden nicht angezeigt
             if datumberechnet.days % float(datum["Giessen"]) == 0: #wenn rest null ergibt
 
